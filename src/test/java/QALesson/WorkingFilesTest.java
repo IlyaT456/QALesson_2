@@ -1,7 +1,7 @@
-package qaLesson;
+package QALesson;
 
-import qaLesson.pojo.People;
-import qaLesson.utils.FileUtils;
+import QALesson.pojo.People;
+import QALesson.utils.FileUtils;
 import com.codeborne.pdftest.PDF;
 import com.codeborne.xlstest.XLS;
 import com.opencsv.exceptions.CsvException;
@@ -13,7 +13,7 @@ import java.util.List;
 
 import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 
-public class WorkingFilesTests {
+public class WorkingFilesTest {
     @Test
     public void textReadZipFile() throws IOException, CsvException {
         HashMap<String, Object> map = FileUtils.readerFromZIP("upload.zip");
